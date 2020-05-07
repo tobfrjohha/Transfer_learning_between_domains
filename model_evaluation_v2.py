@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 28 07:59:04 2020
-
-@author: johan
-"""
 # Imports
 import csv
 import os, shutil
