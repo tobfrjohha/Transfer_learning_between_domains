@@ -1,4 +1,4 @@
-<h1 align="center">Transfer_learning_between_domains</h1>
+<h1 align="center">Transfer learning between domains</h1>
 
 <p align="center">
  <img width="600" height="450" src="TransferLearning_domains.png"/>
