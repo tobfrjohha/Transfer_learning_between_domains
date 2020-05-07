@@ -3,12 +3,14 @@ import random
 import csv
 import os
 import numpy as np
-# Example data
-# Try to do as much processing outside of initializing the workbook
-# Everything beetween Workbook() and close() gets trapped in an exception
 
 user = "johan"
 def generate_graph_from_csv(experimentor, experiment, acc_graphs = False, length = 25):
+    # experimentor -> who has responsibility for the experiment
+    # experiment -> the target experiment
+    # acc_graphs = True -> produce graphs for accuracy
+    # acc_graphs = false -> produce graphs for loss
+    # length -> how many epochs that are being looked at, from 0 to length.
     if (acc_graphs == True):
         first_index = 1
         val_index = 3
@@ -20,7 +22,7 @@ def generate_graph_from_csv(experimentor, experiment, acc_graphs = False, length
         param = "Loss"
         graph_type = "LOSS"
     
-    _data = []# Data location inside excel
+    _data = [] # Data location inside excel
     _val_data = []
     data_start_loc = [0, 0] # xlsxwriter rquires list, no tuple
     data_start_loc_val = [0, 1]
@@ -83,8 +85,8 @@ def make_graphs(experimentor, acc_graphs = False):
         print(experiment)
         if(not "Transferlearning_" in experiment):
             generate_graph_from_csv(str(experimentor), str(experiment), acc_graphs)
-            
+
+make_graphs("Tobias", acc_graphs = True)
+make_graphs("Johan", acc_graphs = True)
 make_graphs("Tobias", acc_graphs = False)
 make_graphs("Johan", acc_graphs = False)
-generate_graph_from_csv("Tobias", "Mini-Inception-ResNet, RC-Boats, tf, unfreezed", acc_graphs=False)
-generate_graph_from_csv("Tobias", "Mini-Inception-ResNet, RC-Boats, tf, unfreezed", acc_graphs=True)
