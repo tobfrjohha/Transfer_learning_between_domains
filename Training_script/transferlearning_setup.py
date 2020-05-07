@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb 18 14:25:57 2020
-@author: combitech
-"""
 from tensorflow.keras.layers import Flatten
 from tensorflow.keras.models import Model
 
