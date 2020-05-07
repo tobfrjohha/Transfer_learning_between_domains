@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 23 13:07:42 2020
-
-@author: combitech
-"""
 
 import librosa
 import librosa.display
