@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr  9 12:57:16 2020
-
-@author: johan
-"""
 import csv
 import os, shutil
 from Dataset.datasets import boats_dataset
