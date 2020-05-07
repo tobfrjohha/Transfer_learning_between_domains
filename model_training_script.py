@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 14 00:16:49 2020
-@author: Tobias
-"""
-
 from Dataset.datasets import boats_dataset
 from Dataset.datasets import cifar_10_dataset
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
