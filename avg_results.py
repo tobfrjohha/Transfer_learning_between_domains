@@ -72,7 +72,6 @@ def printAvgResultsToCSV(experimentor, experiment):
                 writer.writerow({'Epoch': epoch, 'Accuracy': epoch_arr[counter][0], 'Loss' : epoch_arr[counter][1], 'Val_Accuracy' : epoch_arr[counter][2], 'Val_Loss' : epoch_arr[counter][3]})
                 line_count += 1
                 counter += 1   
-        #print(accuracy)
 
 #printAvgResultsToCSV("Tobias", "boats_mini_inception_resnet_TEST")
 #printAvgResultsToCSV("Johan", "boats_inception_v3")
