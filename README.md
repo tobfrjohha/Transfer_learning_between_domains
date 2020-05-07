@@ -1,7 +1,7 @@
 # Transfer_learning_between_domains
 
 <p align="center">
- <img src="transferLearningDomains.png"/>
+ <img src="TransferLearning_Domains.png"/>
 </p>
 
 <p align="center">
