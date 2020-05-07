@@ -17,8 +17,8 @@
 </p>
 
 <h3 align="center">Implemented CNN architectures<h3>
-
-<h4 legend>Mini-Inception</h4>
+<legend>
+<h4 >Mini-Inception</h4>
 
 ![](Mini-Inception_architecture.png)
 ![](Mini-Inception_module.png)
