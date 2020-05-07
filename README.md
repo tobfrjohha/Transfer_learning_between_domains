@@ -1,13 +1,13 @@
 # Transfer_learning_between_domains
 
 <p align="center">
- <img width="460" height="300" src="transferLearningDomains.png"/>
+ <img src="transferLearningDomains.png"/>
 </p>
 
 ![](performance.png)
 
 <p align="center">
- <img width="460" height="300" src="gradcam.png"/>
+ <img src="gradcam.png"/>
 </p>
 
 ![](Mini-Inception_architecture.png)
