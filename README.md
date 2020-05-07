@@ -4,7 +4,7 @@
  <img src="transferLearningDomains.png"/>
 </p>
 
-<img width ="500" src="performance.png"
+<img width ="500" src="performance.png"/>
 
 <p align="center">
  <img src="gradcam.png"/>
