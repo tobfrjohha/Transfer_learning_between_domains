@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 19 19:24:17 2020
-
-@author: Tobias
-"""
-
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D, BatchNormalization, AveragePooling2D, Add
 import tensorflow as tf
 
