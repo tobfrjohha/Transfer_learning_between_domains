@@ -1,13 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 19 11:24:36 2020
-@author: combitech
-"""
-
 from tensorflow.keras import layers
 from tensorflow.keras.layers import Input, Dense, Conv2D, Flatten
 from tensorflow.keras.models import Model
-
     
 def common_layer(X):
     X = layers.BatchNormalization()(X)
