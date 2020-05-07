@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  3 08:42:51 2020
-
-@author: johan
-"""
 import numpy as np
 from Dataset.datasets import boats_dataset
 
