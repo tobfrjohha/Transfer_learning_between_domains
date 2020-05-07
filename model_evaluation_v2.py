@@ -127,13 +127,14 @@ def evaluate_models_to_csv(evaluator_name, experiment_name, dataset, multiple = 
         #print("copying: " + best_model)
         #shutil.copy(folder_name + best_model, saved_folder_name + "/evaluation")
         
-#Evaluating Johan models
+
+# stored execution of evaluation history
 #evaluate_models_to_csv("Johan", "boats_inception_v3", boats_dataset(), multiple=False)
 #evaluate_models_to_csv("Johan", "boats_inception_v3_initialized_weights", boats_dataset(), multiple=False)
 #evaluate_models_to_csv("Johan", "boats_inception_v3_TF", boats_dataset(), multiple=False)
 #model = load_model("/home/johan/Experiment/Tobias_Experiments/boats_inception_resnet_v2/saved_models/V1_/V1_sequential_31_best_val_model.hdf5")
 #evaluate_models_to_csv("Johan", "Transferlearning_mini_inception", cifar_10_dataset(), multiple=True)
-#Evaluating Tobias models
+
 #evaluate_models_to_csv("Tobias", "boats_inception_resnet_v2", boats_dataset(), multiple=False)
 #evaluate_models_to_csv("Tobias", "boats_inception_resnet_v2_initialized_weights", boats_dataset(), multiple=False)
 #evaluate_models_to_csv("Tobias", "boats_inception_resnet_v2_TF", boats_dataset(), multiple=False)
