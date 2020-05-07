@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 13 16:00:10 2020
-
-@author: combitech
-"""
 
 import read_audio
 
