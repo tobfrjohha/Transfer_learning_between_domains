@@ -55,18 +55,15 @@ def write_confusion_matrix_to_csv(evaluator_name, experiment_name, eval_folder, 
             print('---------------------------------------------')
             y_pred = model.predict(test_x)
             y_pred = y_pred.argmax(axis=1)
+            
             target_names = ['class 0(noise)', 'class 1(racer)', 'class 2(spy_cam)', 'class 3(sub)', 'class 4(tugboat)']
-            #print('---------------------------------------------')
             report = classification_report(test_y,y_pred, output_dict=True, target_names=target_names)
             print(type(report))
             df = pandas.DataFrame(report).transpose()
             
-            #print('---------------------------------------------')
             matrix = confusion_matrix(test_y, y_pred)
             print(type(matrix))
             print (df)
-
-            #print(matrix[0])
             
             csv_file = open(eval_folder + "/_CM_statistics_" + experiment_name + ".csv", 'a')
             with csv_file as stats_file:
@@ -82,10 +79,6 @@ def write_confusion_matrix_to_csv(evaluator_name, experiment_name, eval_folder, 
                     metrics.append('version')
                     writer = csv.DictWriter(stats_file, delimiter=";", fieldnames=metrics) 
                     writer.writerow({'class 0(noise)' : matrix[0], 'class 1(racer)' : matrix[1], 'class 2(spy_cam)' : matrix[2], 'class 3(sub)' : matrix[3], 'class 4(tugboat)' : matrix[4], 'version' : str(i + 1)})
-         
-            #csv_file = open(eval_folder + "/_REPORT_statistics_" + experiment_name + ".csv", 'a')
-            #workbook = xlsxwriter.Workbook(eval_folder + "/_REPORT_statistics_" + experiment_name + ".xlsx")
-            #worksheet = workbook.add_worksheet()
             
             report_folder =  os.path.join(eval_folder + "/reports")
             if (not os.path.exists(report_folder)):
@@ -175,9 +168,9 @@ def write_statistics_to_csv(evaluator_name, experiment_name, eval_folder, saved_
 def statistic_analysis(evaluator_name, experiment_name, multiple = False, cm=False):
     #evaluator_name - the one responsible for the experiment
     #experiment_name - name of the current experiment
-    #dataset - the dataset which is used. Returns train_x,train_y,test_x,test_y
     #multiple = True -> When multiple models exist in the same folder. Finds the best one and evaluates
     #multiple = False -> When single model exist in the folders
+    #cm = True -> produce confusion matrix
 
     # Set the evaluation folder
     evaluation_folder =  os.path.join("/home/"+user+"/Experiment/" + evaluator_name + "_Experiments/" + experiment_name + "/saved_models/evaluation")
@@ -191,8 +184,3 @@ def statistic_analysis(evaluator_name, experiment_name, multiple = False, cm=Fal
         write_confusion_matrix_to_csv(evaluator_name, experiment_name, evaluation_folder, saved_folder_name, multiple)
     else:
         write_statistics_to_csv(evaluator_name, experiment_name, evaluation_folder, saved_folder_name, multiple)
-
-#predict_with_single_model("Tobias", "Mini-Inception-ResNet, RC-Boats, tf, unfreezed", boats_dataset(), "26", "V26_model_77_12-0.1248_best_val_model.hdf5")
-#statistic_analysis("Tobias", "Mini-Inception-ResNet, RC-Boats, tf, unfreezed", multiple = True)
-#statistic_analysis("Tobias", "Mini-Inception-ResNet, RC-Boats, tf, half freezed", multiple = True, cm = True)
-statistic_analysis("Tobias", "Mini-Inception-ResNet, RC-Boats, tf, half freezed", multiple = True, cm = False)
