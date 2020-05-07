@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Feb  8 01:23:54 2020
-@author: Tobias
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -13,9 +7,9 @@ DATADIR = "C:/Users/Tobias/CNN/Labbdata_spectrogram_2500ms_noise_removed"
 CATEGORIES = ["Noise", "Racer", "Spy_Cam", "Sub", "Tugboat"]
 
 for category in CATEGORIES:
-    path = os.path.join(DATADIR, category) # path to johan and tobias voices
+    path = os.path.join(DATADIR, category) # Path to category specific mel-spectrograms
    # print(path)
-    for img in os.listdir(path):
+    for img in os.listdir(path):lass
         #print(img)
         img_array = cv2.imread(os.path.join(path,img))
         #img_array = cv2.cvtColor(img_array, cv2.COLOR_BGR2RGB)
@@ -30,7 +24,7 @@ def create_training_and_test_data():
     count = 1
     ten = 10
     for category in CATEGORIES:
-        path = os.path.join(DATADIR, category) # path to johan and tobias voices
+        path = os.path.join(DATADIR, category) # Path to category specific mel-spectrograms
         class_num = CATEGORIES.index(category)
         for img in os.listdir(path):
             try:
@@ -66,7 +60,7 @@ for sample in test_data[:20]:
 test_x = []
 test_y = []
 
-#X GETS THE MATRIX VALUES, y GETS THE LABELS
+#X GETS THE MATRIX VALUES, Y GETS THE LABELS
 for features, label in training_data:
     train_x.append(features)
     train_y.append(label)
