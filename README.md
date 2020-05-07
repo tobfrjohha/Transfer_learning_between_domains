@@ -17,13 +17,13 @@
 </p>
 
 <h3 align="center">Implemented CNN architectures<h3>
-<legend>
-<h4>Mini-Inception</h4>
+
+<h4 legend>Mini-Inception</h4>
 
 ![](Mini-Inception_architecture.png)
 ![](Mini-Inception_module.png)
 
-</legend>
+
 <h4>Mini-Inception-ResNet</h4>
 
 ![](Mini-Inception-ResNet_architecture.png)
