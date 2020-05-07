@@ -5,7 +5,11 @@
 </p>
 
 ![](performance.png)
-![](gradcam.png)
+
+<p align="center">
+ <img width="460" height="300" src="gradcam.png"/>
+</p>
+
 ![](Mini-Inception_architecture.png)
 ![](Mini-Inception_module.png)
 
