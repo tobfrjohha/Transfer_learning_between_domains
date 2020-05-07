@@ -16,7 +16,7 @@
  <img src="gradcam.png"/>
 </p>
 
-<h3 align="center">Architectures<h3>
+<h3 align="center">Implemented CNN architectures<h3>
 
 ![](Mini-Inception_architecture.png)
 ![](Mini-Inception_module.png)
