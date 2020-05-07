@@ -1,5 +1,5 @@
 <p align="center">
-<h1>Transfer_learning_between_domains</h1>
+<h1 align="center">Transfer_learning_between_domains</h1>
 </p>
 
 <p align="center">
