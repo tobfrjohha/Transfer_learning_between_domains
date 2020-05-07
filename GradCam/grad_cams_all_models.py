@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 24 10:10:41 2020
-
-@author: combitech
-"""
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers, models
