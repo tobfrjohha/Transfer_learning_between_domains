@@ -30,9 +30,7 @@ def generate_graph_from_csv(experimentor, experiment, acc_graphs = False, length
     location = os.path.join("/home/"+user+"/Experiment/" + experimentor + "_Experiments/" + experiment + "/")
     files = os.listdir(location)
     for file in files:
-       # print(file)
         if ("_average_results.csv" in file):
-            
             with open(location + file) as csv_file:
                 csv_reader = csv.reader(csv_file, delimiter=";")
                 row_count = 0
@@ -58,11 +56,9 @@ def generate_graph_from_csv(experimentor, experiment, acc_graphs = False, length
     
     worksheet = workbook.add_worksheet()
     
-    # A chart requires data to reference data inside excel
     worksheet.write_column(*data_start_loc, data=_data)
-    
     worksheet.write_column(*data_start_loc_val, data=_val_data)
-    # The chart needs to explicitly reference data
+
     data_start_loc = [1, 0]
     data_start_loc_val = [1, 1]
     
