@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May  7 09:51:00 2020
-
-@author: combitech
-"""
-
 import tensorflow as tf
 from tensorflow import reshape
 from tensorflow.keras import models
