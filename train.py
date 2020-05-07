@@ -123,8 +123,8 @@ import os
 #    train_model(model, "boats", i,experimentor, experiment)
 #evaluate_models_to_csv(experimentor, experiment, boats_dataset()) 
 
-###################################################################################V2V2V2####################################################################
-################################################TRAINING ON BOATS DATASET WITH TRANSFER-LEARNING - HALF FROZEN
+!#!#!#!#!#!#!#!#!!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#RE-TRAINING#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!
+##################################TRAINING ON BOATS DATASET WITH TRANSFER-LEARNING - HALF FROZEN
 ################################################JOHAN
 #experimentor = "Johan"
 #experiment = "boats_mini_inception_tf_HF_new"
