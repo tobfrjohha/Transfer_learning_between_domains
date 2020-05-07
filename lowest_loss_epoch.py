@@ -12,9 +12,6 @@ user = "johan"
 def find_min_loss_epoch(evaluator_name, experiment_name):
     #evaluator_name - the one responsible for the experiment
     #experiment_name - name of the current experiment
-    #dataset - the dataset which is used. Returns train_x,train_y,test_x,test_y
-    #multiple = True -> When multiple models exist in the same folder. Finds the best one and evaluates
-    #multiple = False -> When single model exist in the folders
     
     evaluator = evaluator_name
     experiment = experiment_name
