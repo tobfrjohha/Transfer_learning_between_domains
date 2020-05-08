@@ -27,3 +27,11 @@
 
 ![](Mini-Inception-ResNet_architecture.png)
 ![](Mini-Inception-ResNet_module.png)
+
+
+@misc{chollet2015keras,
+  title={Keras},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2015},
+  howpublished={\url{https://keras.io}},
+} 
