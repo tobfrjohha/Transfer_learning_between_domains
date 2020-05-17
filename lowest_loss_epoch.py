@@ -1,3 +1,5 @@
+# This script is used to find the best model from a folder containing several models
+
 # Imports
 import csv
 import os, shutil
