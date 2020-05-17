@@ -1,3 +1,5 @@
+# calculates the average results for each architecture/configuration combination an stores it in a csv file
+
 import csv
 import os, shutil
 import numpy as np
@@ -13,6 +15,7 @@ def printAvgResultsToCSV(experimentor, experiment):
     
     versions_with_curr_epoch = []   #keeping track of models with the current epoch. Important for average results
     #loop through all versions
+    
     for version in range(1, 31):
         folder = os.path.join(location + "saved_models/V" + str(version) + "_/")
         eval_files = os.listdir(folder)
