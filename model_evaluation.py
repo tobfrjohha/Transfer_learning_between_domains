@@ -1,3 +1,5 @@
+# This script is used to save the results from an evaluated model to a csv file
+
 # Imports
 import csv
 import os, shutil
