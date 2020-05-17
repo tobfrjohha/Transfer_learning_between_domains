@@ -1,3 +1,5 @@
+# This script tries to classify the instances in the test set by using the average amplitude from each of the classes
+
 import numpy as np
 from Dataset.datasets import boats_dataset
 
