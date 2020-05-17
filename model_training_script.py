@@ -1,3 +1,7 @@
+# This script is executed from train.py.
+# The train_model_augmented function was used to train mini-inception and mini-inception-resnet on the cifar10 dataset
+# The train_model function was used for all other training
+
 from Dataset.datasets import boats_dataset
 from Dataset.datasets import cifar_10_dataset
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
