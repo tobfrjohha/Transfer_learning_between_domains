@@ -1,3 +1,5 @@
+# This is the main file that is used to train the architectures in their configurations.
+
 import Models.Johan_Models.mini_inception as m_i
 import Models.Tobias_Models.mini_inception_resnet as m_i_r
 from tensorflow.keras.models import load_model
